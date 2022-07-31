@@ -32,12 +32,6 @@
         "cross-env": "^7.0.3",
         "rimraf": "^3.0.2"
     },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
     "homepage": "ui/build",
     "name": "boilerplate-ui",
     "private": true,
