@@ -22,13 +22,13 @@
     "dependencies": {
         "@citizenfx/client": "^2.0.5715-1",
         "@citizenfx/server": "^2.0.5715-1",
-        "@softjunk/game": "^0.0.3-alpha.0"
+        "softjunk-game": "^0.0.1"
     },
     "devDependencies": {
         "@types/node": "^18.0.3",
         "@typescript-eslint/eslint-plugin": "^5.31.0",
         "@typescript-eslint/parser": "^5.31.0",
-        "colors": "^1.4.0",
+        "colors": "1.4.0",
         "esbuild": "^0.14.49",
         "eslint": "^8.20.0",
         "eslint-config-prettier": "^8.5.0",
