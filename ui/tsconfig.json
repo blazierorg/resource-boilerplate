@@ -6,8 +6,7 @@
             "@resource/types/*": ["../types/*"],
             "@resource/shared": ["../shared/index.ts"],
             "@resource/shared/*": ["../shared/*"],
-            "@resource/config": ["../config/config.json"],
-            "@resource/config/*": ["../config/*"],
+            "@resource/config": ["../config.json"],
             "@/*": ["./src/*"]
         },
         "outDir": "./dist",
