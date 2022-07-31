@@ -1,24 +1,10 @@
 {
     "root": true,
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "prettier"],
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-        "boundaries/entry-point": [
-            0,
-            {
-                "default": "disallow",
-                "rules": [
-                    {
-                        "target": ["src"],
-                        "allow": "*"
-                    }
-                ]
-            }
-        ]
-    }
+    ]
 }
