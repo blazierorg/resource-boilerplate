@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@resource/types": ["../../types/index.ts"],
+            "@resource/types/*": ["../../types/*"],
+            "@resource/shared": ["../../shared/index.ts"],
+            "@resource/shared/*": ["../../shared/*"],
+            "@resource/config": ["../../config/config.json"],
+            "@resource/config/*": ["../../config/*"]
+        },
+        "outDir": "./dist",
+        "module": "esnext",
+        "target": "es6",
+        "allowJs": true,
+        "lib": ["es2017", "ES2015.Promise"],
+        "types": ["@types/node"],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": ["./**/*"],
+    "exclude": ["**/node_modules", "**/__tests__/*"]
+}

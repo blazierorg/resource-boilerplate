@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@resource/types": ["../types/index.ts"],
+            "@resource/types/*": ["../types/*"],
+            "@resource/shared": ["../shared/index.ts"],
+            "@resource/shared/*": ["../shared/*"],
+            "@resource/config": ["../config/config.json"],
+            "@resource/config/*": ["../config/*"],
+            "@/*": ["./src/*"]
+        },
+        "outDir": "./dist",
+        "module": "esnext",
+        "target": "es6",
+        "allowJs": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "types": ["@types/node"],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx"
+    },
+    "include": ["./**/*"],
+    "exclude": ["**/node_modules", "**/__tests__/*"]
+}

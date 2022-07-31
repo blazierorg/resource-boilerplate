@@ -1,0 +1,44 @@
+{
+    "author": "Softjunk Developers <softjunkdevs@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/softjunkorg/boilerplate/issues"
+    },
+    "description": "The FiveM resource boilerplate built with Typescript, and a user interface built with ReactJS. Used by developers to speed up coding with the framework.",
+    "homepage": "https://github.com/softjunkorg/boilerplate#readme",
+    "keywords": [],
+    "license": "MIT",
+    "name": "boilerplate",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/softjunkorg/boilerplate.git"
+    },
+    "scripts": {
+        "build": "node .build/builder",
+        "watch": "node .build/builder --watch",
+        "lint": "eslint ."
+    },
+    "version": "0.0.1",
+    "dependencies": {
+        "@citizenfx/client": "^2.0.5715-1",
+        "@citizenfx/server": "^2.0.5715-1",
+        "@softjunk/game": "^0.0.3-alpha.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.3",
+        "@typescript-eslint/eslint-plugin": "^5.31.0",
+        "@typescript-eslint/parser": "^5.31.0",
+        "colors": "^1.4.0",
+        "esbuild": "^0.14.49",
+        "eslint": "^8.20.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^3.3.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "prettier": "^2.7.1",
+        "typescript": "^4.7.4"
+    }
+}
