@@ -37,5 +37,37 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "prettier": "^2.7.1",
         "typescript": "^4.7.4"
+    },
+    "builderSettings": {
+        "options": [
+            {
+                "entryPoints": [
+                    "./src/client/client.ts"
+                ],
+                "entryNames": "client",
+                "outdir": "./dist/client",
+                "target": [
+                    "node16"
+                ],
+                "bundle": true,
+                "minify": true,
+                "format": "cjs",
+                "platform": "node"
+            },
+            {
+                "entryPoints": [
+                    "./src/server/server.ts"
+                ],
+                "entryNames": "server",
+                "outdir": "./dist/server",
+                "target": [
+                    "node16"
+                ],
+                "bundle": true,
+                "minify": true,
+                "format": "cjs",
+                "platform": "node"
+            }
+        ]
     }
 }

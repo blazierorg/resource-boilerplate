@@ -1,9 +1,12 @@
 const { build } = require("esbuild");
 const colors = require("colors");
-const config = require("../.build.json");
-const options = config.options;
+const config = require("../package.json");
 
-const isWatch = process.argv.findIndex((argItem) => argItem === "--watch") >= 0;
+const isWatch = process.argv.findIndex(argItem => argItem === "--watch") >= 0;
+
+if (!config.builderSettings) {
+    throw new Error("Builder: No settings were found on the package.json!");
+}
 
 function runBuild(config) {
     build({
@@ -14,12 +17,12 @@ function runBuild(config) {
                       if (err) {
                           return console.error(
                               `[${colors.red("BUILDER")}]: Error on listening`,
-                              err
+                              err,
                           );
                       }
 
                       console.log(
-                          `[${colors.green("BUILDER")}]: Listened to changes.`
+                          `[${colors.green("BUILDER")}]: Listened to changes.`,
                       );
                   },
               }
@@ -31,10 +34,10 @@ if (isWatch) {
     console.log(`[${colors.green("BUILDER")}]: Started listening to changes.`);
 }
 
-if (Array.isArray(options)) {
-    options.map(function (c) {
+if (Array.isArray(config.builderSettings.options)) {
+    config.builderSettings.options.map(function (c) {
         runBuild(c);
     });
 } else {
-    runBuild(options);
+    runBuild(config.builderSettings.options);
 }
