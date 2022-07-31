@@ -2,12 +2,11 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@resource/types": ["../../types/index.ts"],
-            "@resource/types/*": ["../../types/*"],
-            "@resource/shared": ["../../shared/index.ts"],
-            "@resource/shared/*": ["../../shared/*"],
-            "@resource/config": ["../../config/config.json"],
-            "@resource/config/*": ["../../config/*"]
+            "@resource/types": ["./types/index.ts"],
+            "@resource/types/*": ["./types/*"],
+            "@resource/shared": ["./shared/index.ts"],
+            "@resource/shared/*": ["./shared/*"],
+            "@resource/config": ["./config.json"]
         },
         "outDir": "./dist",
         "module": "esnext",
