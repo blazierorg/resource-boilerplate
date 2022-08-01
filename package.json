@@ -14,9 +14,7 @@
     },
     "scripts": {
         "build": "node .build/builder",
-        "watch": "node .build/builder --watch",
-        "lint": "eslint .",
-        "lint-and-fix": "eslint . --fix"
+        "watch": "node .build/builder --watch"
     },
     "version": "0.0.1",
     "dependencies": {
@@ -26,15 +24,8 @@
     },
     "devDependencies": {
         "@types/node": "^18.0.3",
-        "@typescript-eslint/eslint-plugin": "^5.31.0",
-        "@typescript-eslint/parser": "^5.31.0",
         "colors": "1.4.0",
         "esbuild": "^0.14.49",
-        "eslint": "^8.20.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.30.1",
-        "eslint-plugin-react-hooks": "^4.6.0",
         "prettier": "^2.7.1",
         "typescript": "^4.7.4"
     },
