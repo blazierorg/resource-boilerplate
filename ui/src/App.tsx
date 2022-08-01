@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import { useRecoilState } from "recoil";
-import { Nui } from "@softjunk/ui";
+import { Nui } from "softjunk-ui";
 
 import { nuiShowness } from "./store/atoms";
 

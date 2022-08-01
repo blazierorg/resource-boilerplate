@@ -1,4 +1,4 @@
-import { Resolutions, ThemeProvider } from "@softjunk/ui";
+import { Resolutions, ThemeProvider } from "softjunk-ui";
 import { RecoilRoot } from "recoil";
 import { createRoot } from "react-dom/client";
 

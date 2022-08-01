@@ -12,7 +12,6 @@
         ]
     },
     "dependencies": {
-        "@softjunk/ui": "^0.0.3-alpha.0",
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
@@ -24,6 +23,7 @@
         "react-dom": "^18.0.0",
         "react-scripts": "5.0.0",
         "recoil": "^0.7.4",
+        "softjunk-ui": "^0.0.1",
         "typescript": "^4.5.5",
         "web-vitals": "^2.1.3"
     },
