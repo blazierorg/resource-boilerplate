@@ -18,9 +18,9 @@
     },
     "version": "0.0.1",
     "dependencies": {
-        "@citizenfx/client": "^2.0.5715-1",
-        "@citizenfx/server": "^2.0.5715-1",
-        "softjunk-game": "^0.0.2"
+        "@citizenfx/client": "latest",
+        "@citizenfx/server": "latest",
+        "softjunk-game": "latest"
     },
     "devDependencies": {
         "@types/node": "^18.0.3",
