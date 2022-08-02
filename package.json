@@ -41,7 +41,7 @@
                     "node16"
                 ],
                 "bundle": true,
-                "minify": true,
+                "minify": false,
                 "format": "cjs",
                 "platform": "node"
             },
@@ -55,7 +55,7 @@
                     "node16"
                 ],
                 "bundle": true,
-                "minify": true,
+                "minify": false,
                 "format": "cjs",
                 "platform": "node"
             }
